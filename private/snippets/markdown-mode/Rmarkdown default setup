@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: Rmarkdown default setup
+# key: rmarkdown
+# --
+---
+title: ${1:title}
+author: Kris Sankaran
+date: "\`r Sys.Date()`"
+output: bookdown::pdf_book
+---
+
+\`\`\`{r, echo = F}
+library("knitr")
+opts_chunk$set(fig.width = 8, fig.height = 8, fig.align = "center")
+\`\`\`
+$0
