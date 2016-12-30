@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: Initialize with default libraries
+# key: lib
+# --
+# Setup packages ---------------------------------------------------------------
+## List of packages for session
+.packages <- c(
+  "data.table",
+  "plyr",
+  "dplyr",
+  "knitr",
+  "reshape2",
+  "ggplot2"
+)
+
+## Install CRAN packages (if not already installed)
+.inst <- .packages %in% installed.packages()
+if (any(!.inst)) {
+  install.packages(.packages[!.inst], repos = "http://cran.rstudio.com/")
+}
+
+## Load packages into session
+sapply(.packages, require, character.only = TRUE)

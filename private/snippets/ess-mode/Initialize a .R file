@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Initialize a .R file
+# key: init
+# --
+#! /usr/bin/env Rscript
+
+## File description -------------------------------------------------------------
