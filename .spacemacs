@@ -328,6 +328,11 @@ you should place your code here."
  '(custom-safe-themes
    (quote
     ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
+ '(ess-smart-S-assign-key ";")
+ '(ess-toggle-S-assign nil)
+ '(ess-toggle-S-assign nil)
+ '(ess-toggle-underscore nil) ; leave underscore key alone!
+
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
